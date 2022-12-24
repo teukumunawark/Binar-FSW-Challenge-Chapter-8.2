@@ -1,4 +1,4 @@
-const cloudinary = require("../../src/config/cloudinary");
+const cloudinary = require("../config/cloudinary");
 
 class Cloudinary {
   static async upload(data) {
