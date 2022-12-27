@@ -204,7 +204,7 @@ class CarService {
     }
   }
 
-  static async deleteCar({ id, userID }) {
+  static async deleteCar({ id }) {
     try {
       const deletedCar = await carRepository.delete({ id });
       return {
