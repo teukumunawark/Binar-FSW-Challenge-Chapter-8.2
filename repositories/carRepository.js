@@ -60,11 +60,8 @@ class CarRepository {
     return updateCar;
   }
 
-  static async delete({ id, userID }) {
-    const deletedCar = await Car.update(
-      {
-        deletedAt: new Date().getTime(),
-      },
+  static async delete({ id }) {
+    const deletedCar = await Car.destroy(
       { where: { id } }
     );
 
