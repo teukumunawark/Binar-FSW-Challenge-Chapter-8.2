@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const carRoute = require('./routes/carRoute');
-const authRoute = require('./routes/carRoute');
+const authRoute = require('./routes/authRoute');
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
